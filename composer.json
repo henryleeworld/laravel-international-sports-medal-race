@@ -8,18 +8,18 @@
         "php": "^7.3|^8.0",
         "fruitcake/laravel-cors": "^2.0",
         "guzzlehttp/guzzle": "^7.3.0",
-        "laravel/framework": "^8.58",
+        "laravel/framework": "^8.60",
         "laravel/sanctum": "^2.11",
         "laravel/tinker": "^2.6",
         "laravel/ui": "^3.3"
     },
     "require-dev": {
         "facade/ignition": "^2.12",
-        "fakerphp/faker": "^1.15.0",
+        "fakerphp/faker": "^1.16.0",
         "laravel/sail": "^1.10.1",
         "mockery/mockery": "^1.4.3",
         "nunomaduro/collision": "^5.9",
-        "phpunit/phpunit": "^9.5.8"
+        "phpunit/phpunit": "^9.5.9"
     },
     "autoload": {
         "psr-4": {
