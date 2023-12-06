@@ -1,4 +1,4 @@
-# Laravel 9 國際體育獎牌競賽
+# Laravel 10 國際體育獎牌競賽
 
 在國際體育上獲得佳績，不僅是對選手實力的肯定，也是國力的展現。因此許多國家都提供了高額獎金，一方面吸引選手努力打拚，一方面也是獎勵為國爭光的選手。
 
@@ -20,9 +20,13 @@ $ php artisan key:generate
 ```sh
 $ php artisan migrate --seed
 ```
-- 執行安裝 Laravel Mix 引用的依賴項目，並執行所有 Mix 任務。
+- 執行安裝 Vite 和 Laravel 擴充套件引用的依賴項目。
 ```sh
-$ npm install && npm run dev
+$ npm install
+```
+- 執行正式環境版本化資源管道並編譯。
+```sh
+$ npm run build
 ```
 - 在瀏覽器中輸入已定義的路由 URL 來訪問，例如：http://127.0.0.1:8000。
 - 你可以經由 `/register` 來進行註冊。
@@ -31,8 +35,8 @@ $ npm install && npm run dev
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/51ywiEl.png)
+![](https://i.imgur.com/oaKrbmy.png)
 > 各國選手無不力求卓越，渴望在體育殿堂上爭得席次，獎牌代表的不止是個人實力的見證，同時也是國家榮耀的象徵
 
-![](https://i.imgur.com/p9l2RsH.png)
+![](https://i.imgur.com/Ricad6L.png)
 > 以國家為單位獲得的獎牌數目，是人們慣常用來衡量國際體育輸贏的指標
