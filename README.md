@@ -1,4 +1,4 @@
-# Laravel 10 國際體育獎牌競賽
+# Laravel 11 國際體育獎牌競賽
 
 在國際體育上獲得佳績，不僅是對選手實力的肯定，也是國力的展現。因此許多國家都提供了高額獎金，一方面吸引選手努力打拚，一方面也是獎勵為國爭光的選手。
 
@@ -35,8 +35,8 @@ $ npm run build
 ----
 
 ## 畫面截圖
-![](https://i.imgur.com/oaKrbmy.png)
+![](https://i.imgur.com/mAM7pDO.png)
 > 各國選手無不力求卓越，渴望在體育殿堂上爭得席次，獎牌代表的不止是個人實力的見證，同時也是國家榮耀的象徵
 
-![](https://i.imgur.com/Ricad6L.png)
+![](https://i.imgur.com/eo4UNUL.png)
 > 以國家為單位獲得的獎牌數目，是人們慣常用來衡量國際體育輸贏的指標

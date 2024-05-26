@@ -22,7 +22,7 @@
                                             @foreach ($countries as $country)
                                                 <option value="{{ $country->id }}"
                                                         @if (old('sports.'.$sport->id.'.0') == $country->id) selected @endif
-                                                >{{ $country->name }}</option>
+                                                >{{ __($country->name) }}</option>
                                             @endforeach
                                         </select>
                                         @error('sports.'.$sport->id.'.0')
@@ -43,7 +43,7 @@
                                             @foreach ($countries as $country)
                                                 <option value="{{ $country->id }}"
                                                         @if (old('sports.'.$sport->id.'.1') == $country->id) selected @endif
-                                                >{{ $country->name }}</option>
+                                                >{{ __($country->name) }}</option>
                                             @endforeach
                                         </select>
                                         @error('sports.'.$sport->id.'.1')
@@ -64,7 +64,7 @@
                                             @foreach ($countries as $country)
                                                 <option value="{{ $country->id }}"
                                                         @if (old('sports.'.$sport->id.'.2') == $country->id) selected @endif
-                                                >{{ $country->name }}</option>
+                                                >{{ __($country->name) }}</option>
                                             @endforeach
                                         </select>
                                         @error('sports.'.$sport->id.'.2')

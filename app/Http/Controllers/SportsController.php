@@ -3,8 +3,8 @@
 namespace App\Http\Controllers;
 
 use App\Http\Requests\StoreSportsRequest;
-use App\Models\Sport;
 use App\Models\Country;
+use App\Models\Sport;
 use Illuminate\Http\Request;
 
 class SportsController extends Controller

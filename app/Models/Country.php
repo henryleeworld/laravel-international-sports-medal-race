@@ -9,6 +9,11 @@ class Country extends Model
 {
     use HasFactory;
 
+    /**
+     * The attributes that are mass assignable.
+     *
+     * @var array<int, string>
+     */
     protected $fillable = ['name', 'short_code'];
 
     public function sports()

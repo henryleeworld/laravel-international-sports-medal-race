@@ -20,7 +20,7 @@
                             <tbody>
                             @foreach ($countries as $country)
                                 <tr>
-                                    <th>{{ $country->name }}</th>
+                                    <th>{{ __($country->name) }}</th>
                                     <td>{{ $country->gold }}</td>
                                     <td>{{ $country->silver }}</td>
                                     <td>{{ $country->bronze }}</td>
