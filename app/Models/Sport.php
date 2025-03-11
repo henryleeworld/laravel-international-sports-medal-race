@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
 class Sport extends Model
 {
@@ -12,11 +13,14 @@ class Sport extends Model
     /**
      * The attributes that are mass assignable.
      *
-     * @var array<int, string>
+     * @var list<string>
      */
     protected $fillable = ['name'];
 
-    public function countries()
+    /**
+     * The countries that belong to the sport.
+     */
+    public function countries(): BelongsToMany
     {
         return $this->belongsToMany(Country::class)->withPivot('position');
     }
