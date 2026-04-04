@@ -9,6 +9,9 @@ use Illuminate\Http\Request;
 
 class SportsController extends Controller
 {
+    /**
+     * Show the form for creating a new resource.
+     */
     public function create()
     {
         $sports = Sport::all();
@@ -17,6 +20,9 @@ class SportsController extends Controller
         return view('sports.create', compact('sports', 'countries'));
     }
 
+    /**
+     * Store a newly created resource in storage.
+     */
     public function store(StoreSportsRequest $request)
     {
         $sports = Sport::all();
@@ -33,6 +39,9 @@ class SportsController extends Controller
         return redirect()->route('show');
     }
 
+    /**
+     * Display the specified resource.
+     */
     public function show()
     {
         $countries = Country::has('sports')

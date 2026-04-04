@@ -2,20 +2,17 @@
 
 namespace App\Models;
 
+use Database\Factories\SportFactory;
+use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
+#[Fillable(['name'])]
 class Sport extends Model
 {
+    /** @use HasFactory<SportFactory> */
     use HasFactory;
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
-    protected $fillable = ['name'];
 
     /**
      * The countries that belong to the sport.

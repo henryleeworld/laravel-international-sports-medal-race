@@ -2,20 +2,17 @@
 
 namespace App\Models;
 
+use Database\Factories\CountryFactory;
+use Illuminate\Database\Eloquent\Attributes\Fillable;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 use Illuminate\Database\Eloquent\Relations\BelongsToMany;
 
+#[Fillable(['name', 'short_code'])]
 class Country extends Model
 {
+    /** @use HasFactory<CountryFactory> */
     use HasFactory;
-
-    /**
-     * The attributes that are mass assignable.
-     *
-     * @var list<string>
-     */
-    protected $fillable = ['name', 'short_code'];
 
     /**
      * The sports that belong to the country.
